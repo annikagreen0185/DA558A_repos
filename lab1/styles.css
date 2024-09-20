@@ -25,9 +25,15 @@ main {
 nav {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    justify-content: space-around;
+    gap: 20px;
+    justify-content: center;
     width: 100%;
     padding: 10px;
+}
+
+#horizontal {
+    padding-left: 100px !important;
+    display: block !important;
 }
 
 @media screen and (min-width:600px) and (max-width:992px){
@@ -103,7 +109,6 @@ input[type="submit"]:hover {
 }
 
 a {
-    display: inline-block;
     color: #000;
     text-decoration: none;
 }
