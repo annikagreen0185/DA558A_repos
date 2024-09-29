@@ -69,8 +69,12 @@ h1 {
     color: #333;
     text-align: center;
 }
-h3, h3 + p {
+h3, h3 + p{
     padding-left: 20px;
+}
+
+table, ul {
+    margin-left: 20px;
 }
 
 form {
