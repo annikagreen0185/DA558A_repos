@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MathQuiz</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Quiz on basic math, by Annika Green</h1>
+        </header>
+
+        <main>
+            <form id="MathQuiz">
+                <fieldset>
+                    <legend><strong>Question 1<span style="color: red;">*</span> - What is the square root of 64?</strong></legend>
+                    <input type="radio" value="4"> 4<br>
+                    <input type="radio" value="6"> 6<br>
+                    <input type="radio" value="8"> 8<br> <!-- correct answer 8 -->
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>Question 2 - Choose all the prime numbers</strong></legend>
+                    <input type="checkbox" value="1"> 1<br>
+                    <input type="checkbox" value="2"> 2<br> <!-- correct answer 2 -->
+                    <input type="checkbox" value="4"> 4<br>
+                    <input type="checkbox" value="7"> 7<br> <!-- correct answer 7 -->
+                    <input type="checkbox" value="12"> 12<br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>Question 3 - What is the answer to 12 multiplied by 12 (12*12)? Write the correct answer in the text box</strong></legend>
+                    <input type="text">
+                    <!-- correct answer 144 -->
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>Question 4 - What is 33% of 200? Write the correct answer in the text box</strong></legend>
+                    <input type="text>"
+                    <!-- correct answer 66 -->
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>Question 5<span style="color: red;">*</span> - How difficult did you find the test?</strong></legend>
+                    <input type="radio" value="1"> 1 - easy<br>
+                    <input type="radio" value="2"> 2 - moderate<br>
+                    <input type="radio" value="3"> 3 - hard<br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <!-- Visitorinformation:
+                    first name, required, only letters
+                    last name, required, only letters
+                    email, required, correct syntax -->        
+
+                    <legend><strong>Visitorinformation</strong></legend>
+                    First name<span style="color: red;">*</span>: <input type="text" placeholder="First name" name="firstname" required><br>
+                    Last name<span style="color: red;">*</span>: <input type="text" placeholder="Last name" name="lastname" required><br>
+                    Email address<span style="color: red;">*</span>: <input type="email" placeholder="Your email address" name="address" required><br>
+                </fieldset>
+
+                <br>
+                <span style="color: red;">* answer required</span><br>
+                <br>
+                <button type="submit">Submit quiz</button><br>
+                <br>
+        </form>
+        <!--
+        Validation:
+        validation when klicked on submit
+         Error message for invalid input or missing required input
+         Success message        -->
+
+        </main>
+    </body>
+    
+</html>
