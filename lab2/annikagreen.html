@@ -11,67 +11,64 @@
         </header>
 
         <main>
-            <form id="MathQuiz">
+            <form id="mathQuiz" method="post">
                 <fieldset>
                     <legend><strong>Question 1<span style="color: red;">*</span> - What is the square root of 64?</strong></legend>
-                    <input type="radio" value="4"> 4<br>
-                    <input type="radio" value="6"> 6<br>
-                    <input type="radio" value="8"> 8<br> <!-- correct answer 8 -->
+                    <input type="radio" id="q1" name="q1" value="4"> 4<br>
+                    <input type="radio" id="q1" name="q1" value="6"> 6<br>
+                    <input type="radio" id="q1" name="q1" value="8"> 8<br> <!-- correct answer 8 -->
+                    <div id="error-message-q1" style="color: red;"></div>
                 </fieldset>
                 <br>
                 <fieldset>
                     <legend><strong>Question 2 - Choose all the prime numbers</strong></legend>
-                    <input type="checkbox" value="1"> 1<br>
-                    <input type="checkbox" value="2"> 2<br> <!-- correct answer 2 -->
-                    <input type="checkbox" value="4"> 4<br>
-                    <input type="checkbox" value="7"> 7<br> <!-- correct answer 7 -->
-                    <input type="checkbox" value="12"> 12<br>
+                    <input type="checkbox" id="q2_1" name="q2_1" value="1"> 1<br>
+                    <input type="checkbox" id="q2_2" name="q2_2" value="2"> 2<br> <!-- correct answer 2 -->
+                    <input type="checkbox" id="q2_4" name="q2_4" value="4"> 4<br>
+                    <input type="checkbox" id="q2_7" name="q2_7" value="7"> 7<br> <!-- correct answer 7 -->
+                    <input type="checkbox" id="q2_12" name="q2_12" value="12"> 12<br>
                 </fieldset>
                 <br>
                 <fieldset>
                     <legend><strong>Question 3 - What is the answer to 12 multiplied by 12 (12*12)? Write the correct answer in the text box</strong></legend>
-                    <input type="text">
+                    <input type="text" id="q3" name="q3">
                     <!-- correct answer 144 -->
                 </fieldset>
                 <br>
                 <fieldset>
                     <legend><strong>Question 4 - What is 33% of 200? Write the correct answer in the text box</strong></legend>
-                    <input type="text>"
+                    <input type="text" id="q4" name="q4">
                     <!-- correct answer 66 -->
                 </fieldset>
                 <br>
                 <fieldset>
-                    <legend><strong>Question 5<span style="color: red;">*</span> - How difficult did you find the test?</strong></legend>
-                    <input type="radio" value="1"> 1 - easy<br>
-                    <input type="radio" value="2"> 2 - moderate<br>
-                    <input type="radio" value="3"> 3 - hard<br>
+                    <legend><strong>Question 5<span style="color: red;">*</span> - How difficult did you find the quiz?</strong></legend>
+                    <input type="radio" id="q5" name="q5" value="1"> 1 - easy<br>
+                    <input type="radio" id="q5" name="q5" value="2"> 2 - moderate<br>
+                    <input type="radio" id="q5" name="q5" value="3"> 3 - hard<br>
+                    <div id="error-message-q5" style="color: red;"></div>
                 </fieldset>
                 <br>
                 <fieldset>
-                    <!-- Visitorinformation:
-                    first name, required, only letters
-                    last name, required, only letters
-                    email, required, correct syntax -->        
-
                     <legend><strong>Visitorinformation</strong></legend>
-                    First name<span style="color: red;">*</span>: <input type="text" placeholder="First name" name="firstname" required><br>
-                    Last name<span style="color: red;">*</span>: <input type="text" placeholder="Last name" name="lastname" required><br>
-                    Email address<span style="color: red;">*</span>: <input type="email" placeholder="Your email address" name="address" required><br>
+                    First name<span style="color: red;">*</span>: <input type="text" placeholder="First name" id="firstname" name="firstname">
+                    <div id="error-message-firstname" style="color: red;"></div><br>
+                    Last name<span style="color: red;">*</span>: <input type="text" placeholder="Last name" id="lastname" name="lastname">
+                    <div id="error-message-lastname" style="color: red;"></div><br>
+                    Email address<span style="color: red;">*</span>: <input type="email" placeholder="Your email address" id="address" name="address">
+                    <div id="error-message-address" style="color: red;"></div>
                 </fieldset>
 
                 <br>
                 <span style="color: red;">* answer required</span><br>
                 <br>
-                <button type="submit">Submit quiz</button><br>
+                <button type="submit" id="submittQuizButton">Submit quiz</button><br>
                 <br>
+                
         </form>
-        <!--
-        Validation:
-        validation when klicked on submit
-         Error message for invalid input or missing required input
-         Success message        -->
-
+        
         </main>
+        <script src="annikagreen.js"></script>
     </body>
     
 </html>
